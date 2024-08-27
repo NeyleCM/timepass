@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); // Definir un router de Express para manejar la ruta /endroute.
 
 router.get('/', (req, res) => {
   res.send(`
