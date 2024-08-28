@@ -15,7 +15,7 @@ app.use(horaMiddleware);
 app.use('/endroute', validarHora, endRoute);
 app.use('/', indexRoute);
 
-/* Puedes combinar middlewares y rutas dentro de un solo app.use, pero el orden importa. Por ejemplo:
+/* Se puede combinar middlewares y rutas dentro de un solo app.use, pero el orden importa. Por ejemplo:
 app.use('/endroute', horaMiddleware, validarHora, endRoute);
  En este caso, tanto horaMiddleware como validarHora se ejecutan en esa secuencia antes de llegar a endRoute. 
  Solo se pasa a endRoute si ambos middlewares permiten la continuación.*/
